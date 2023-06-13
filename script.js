@@ -43,7 +43,7 @@ function rot13(encodedStr) {
 			decodedArr.push(lookup[encodedStr[i]]);
 		}
 	}
-  return decodedArr; //return decodedArr
+  return decodedArr.join(""); //return decodedArr
 	
 }
 
