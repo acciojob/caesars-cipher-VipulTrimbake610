@@ -44,7 +44,7 @@ function rot13(str) {
 		}
 	}
 	// console.log(decodedArr.join(""));
-  return decodedArr; //return decodedArr
+  return decodedArr.join(""); //return decodedArr
 	
 }
 
