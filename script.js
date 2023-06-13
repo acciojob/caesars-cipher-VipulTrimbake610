@@ -43,13 +43,13 @@ function rot13(str) {
 			decodedArr.push(lookup[str[i]]);
 		}
 	}
-	console.log(decodedArr.join(""));
+	// console.log(decodedArr.join(""));
   return decodedArr; //return decodedArr
 	
 }
 
 // You can test your code by running the above function and printing it to console by pressing the run button at the top. To run it with input 36, uncomment the following line
-rot13("SERR YBIR? NPPVBWBO");
-
+let result = rot13("SERR YBIR? NPPVBWBO");
+console.log(result);
 // Do not change this line
 window.rot13 = rot13;
