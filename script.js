@@ -49,7 +49,7 @@ function rot13(str) {
 }
 
 // You can test your code by running the above function and printing it to console by pressing the run button at the top. To run it with input 36, uncomment the following line
-let result = rot13("SERR YBIR? NPPVBWBO");
-console.log(result);
+let res = rot13("SERR YBIR? NPPVBWBO");
+console.log(res);
 // Do not change this line
 window.rot13 = rot13;
