@@ -27,8 +27,6 @@ const lookup = {
   X: "K",
   Y: "L",
   Z: "M",
-  "?": "?",
-  ",": ",",
 };
 
 function rot13(str) {
