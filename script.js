@@ -31,25 +31,25 @@ const lookup = {
   ",": ",",
 };
 
-function rot13(encodedStr) {
+function rot13(str) {
   let decodedArr = []; // Your Result goes here
   // Only change code below this line
 // console.log(encodedStr);
-	for(let i=0;i<encodedStr.length;i++){
-		if(encodedStr[i] == undefined){
-			decodedArr.push(encodedStr[i])
+	for(let i=0;i<str.length;i++){
+		if(lookup[str[i]] == undefined){
+			decodedArr.push(str[i])
 		}
 		else{
-			decodedArr.push(lookup[encodedStr[i]]);
+			decodedArr.push(lookup[str[i]]);
 		}
 	}
-  return decodedArr.join(""); //return decodedArr
+	console.log(decodedArr.join(""));
+  return decodedArr; //return decodedArr
 	
 }
 
 // You can test your code by running the above function and printing it to console by pressing the run button at the top. To run it with input 36, uncomment the following line
-
-// rot13("SERR YBIR? NPPVBWBO");
+rot13("SERR YBIR? NPPVBWBO");
 
 // Do not change this line
 window.rot13 = rot13;
